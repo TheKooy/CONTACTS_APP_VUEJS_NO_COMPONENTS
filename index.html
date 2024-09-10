@@ -89,6 +89,18 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script></script>
+    <script>
+      localStorage.setItem(
+        "contacts",
+        JSON.stringify([
+          {
+            id: Date.now(),
+            name: "John Doe",
+            phone: "123456789",
+            email: "doe.john@email.com",
+          },
+        ])
+      );
+    </script>
   </body>
 </html>
